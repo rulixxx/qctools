@@ -1,5 +1,5 @@
 # qctools
-fastqc, qualimap and multiqc in a container
+fastqc (v0.12.1), qualimap (v2.3) and multiqc (v1.14) in a container
 
 https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
