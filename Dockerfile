@@ -40,6 +40,7 @@ ADD build/libInstall.R build/
 RUN Rscript build/libInstall.R $R_LIBS
 RUN pip3 install --target=$OPT/lib/python3 multiqc
 RUN ln -s $OPT/lib/python3/bin/* $OPT/bin/
+COPY sample_swap.py $OPT/bin
 
 FROM ubuntu:22.04
 
@@ -55,7 +56,8 @@ r-base \
 libxml2 \
 libcurl4 \
 python3-distutils \
-python3-setuptools
+python3-setuptools \
+python3-pandas
 
 
 
